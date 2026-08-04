@@ -3,7 +3,7 @@ from PIL import Image
 
 BLACK = (0, 0, 0, 255)
 
-def solveMaze(maze):
+def followLeftWall(maze):
     img = Image.open(maze)
     image_width, image_height = img.size
 
@@ -95,4 +95,4 @@ def getPixelColor(x, y, img, width, height):
 if __name__ == "__main__":
     #filename = input("Enter the filename of the maze: ")
     filename = "maze2.png"
-    solveMaze(filename)
+    followLeftWall(filename)
